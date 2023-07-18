@@ -1,0 +1,703 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Aayush-Developer portfolio</title>
+    <link rel="stylesheet" href="style.css">
+
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,700;1,400&display=swap');
+    </style>
+    <style>
+        /* global classes * and body */
+
+        * {
+            margin: 0;
+            padding: 0;
+        }
+
+
+        body {
+            background-color: rgb(0, 0, 33);
+            color: white;
+            margin: 0;
+            padding: 0;
+            height: 100vh;
+            font-family: 'Poppins', sans-serif;
+
+        }
+
+
+        #particles-js {
+
+            height: 100%;
+            background-color: rgb(0, 0, 33);
+        }
+
+        nav {
+            display: flex;
+            justify-content: space-around;
+            align-items: center;
+            height: 60px;
+            background-color: rgb(18, 18, 62);
+        }
+
+        nav img {
+
+
+            background-image: url(nav_bar.png);
+            height: 47px;
+            width: 2%;
+            background-repeat: no-repeat;
+            border-radius: 30px;
+            cursor: pointer;
+            border: 0.5px solid whitesmoke;
+            padding: -1px;
+            width: -1px;
+            text-align: center;
+        }
+
+
+
+        nav ul {
+            display: flex;
+            justify-content: center;
+        }
+
+        nav ul li {
+            list-style: none;
+            margin: 0 20px;
+        }
+
+        nav ul li a {
+            text-decoration: none;
+            color: white;
+        }
+
+
+        nav ul li a:hover {
+
+            color: rgb(105, 112, 115);
+            font-size: 1.02rem;
+        }
+
+        main hr {
+            border: 0;
+            background-color: #9c97f1;
+            height: 0.2px;
+            margin: 40px 84px;
+        }
+
+        .left {
+            font-size: 1.5em;
+            margin-left: -28%;
+        }
+
+        .intro {
+            margin-top: -880px;
+        }
+
+        .firstSection {
+            display: flex;
+            justify-content: space-around;
+            align-items: center;
+            margin: 130px 0;
+
+
+        }
+
+        .firstSection>div {
+            width: 30%;
+
+        }
+
+        .leftSection {
+
+            font-size: 4rem;
+
+        }
+
+        .leftSection .buttons {
+            padding: 25px 0;
+        }
+
+        .leftSection .btn {
+            position: relative;
+            text-align: center;
+            width: 250px;
+            padding: 10px;
+            font-family: poppins;
+            font-weight: 400;
+            background-color: #1e2167;
+            color: white;
+            transition: 0.2s;
+            border: 0.5px solid white;
+            border-radius: 40px;
+            font-size: 20px;
+            cursor: pointer;
+        }
+
+        .leftSection .btn:hover {
+            box-shadow: 0 5px 50px 0 #4966db inset, 0 5px 50px 0 #4966db,
+                0 5px 50px 0 #4966db inset, 0 5px 50px 0 #4966db;
+            text-shadow: 0 0 5px #4966db, 0 0 5px #4966db;
+        }
+
+        .rightSection img {
+            width: 80%;
+        }
+
+        .purple {
+            color: rgb(170, 101, 235);
+
+        }
+
+        .text-gray {
+            color: gray;
+        }
+
+        #element {
+            color: rgb(170, 101, 235);
+
+        }
+
+        .secondSection {
+
+            max-width: 78vw;
+            margin: 62px 197px;
+            height: 42vh;
+        }
+
+        .secondSection h1 {
+            font-size: 1.9rem;
+        }
+
+        .secondSection .box {
+            background: white;
+            width: 75vw;
+            height: 2px;
+            margin: 56px 0;
+            display: flex;
+            margin-left: 53px;
+
+        }
+
+        .secondSection .vertical {
+            height: 93px;
+            width: 2px;
+            background-color: white;
+            margin: 0 100px;
+
+        }
+
+        .image-top {
+            width: 35px;
+            position: relative;
+            top: -38px;
+            left: -10px;
+        }
+
+        .vertical-title {
+
+            position: relative;
+            top: 35px;
+            width: 150px;
+            font-size: 14px;
+            margin-left: 8px;
+
+
+        }
+
+        .vertical-title-sql {
+            position: relative;
+            top: 52px;
+            width: 110px;
+            font-size: 14px;
+            margin-left: 8px;
+        }
+
+        .vertical-title-mysql {
+            position: relative;
+            top: 45px;
+            width: 110px;
+            font-size: 14px;
+            margin-left: 8px;
+        }
+
+        .vertical-desc {
+            position: relative;
+            top: 86px;
+            color: gray;
+            width: 150px;
+            font: size 9px;
+
+
+        }
+
+        .second-hr {
+
+            border: 0;
+            background-color: #9c97f1;
+            height: 0.2px;
+            width: 108rem;
+            margin: 57px;
+            margin-top: -143px;
+            margin-left: 85px;
+        }
+
+        /* third section  */
+        .thirdSection {
+
+            max-width: 78vw;
+            margin: auto;
+            height: 40vh;
+        }
+
+        .thirdSection h1 {
+            font-size: 1.9rem;
+        }
+
+        .thirdSection .box {
+            background: white;
+            text-align: center;
+            width: 44vw;
+            height: 2px;
+            margin: 65px 0;
+            display: flex;
+            margin-left: 140px;
+
+        }
+
+        .thirdSection .vertical {
+            height: 93px;
+            width: 1px;
+            background-color: white;
+            margin: 0 100px;
+
+        }
+
+        .image-top-side {
+            width: 35px;
+            position: relative;
+            top: -38px;
+            left: -10px;
+        }
+
+        .vertical-third-title {
+
+            position: relative;
+            top: 36px;
+            width: 140px;
+            font-size: 14px;
+            margin-left: 5px;
+
+
+        }
+
+        .vertical-third-title-highSchool {
+
+            position: relative;
+            top: 38px;
+            width: 140px;
+            font-size: 14px;
+            margin-left: -24px;
+
+
+        }
+
+        .vertical-third-title-intermediate {
+
+            position: relative;
+            top: 51px;
+            width: 140px;
+            font-size: 14px;
+            margin-left: 4px;
+
+
+        }
+
+        .vertical-third-title-poly {
+
+            position: relative;
+            top: 51px;
+            width: 140px;
+            font-size: 14px;
+            margin-left: 4px;
+
+
+        }
+
+        .vertical-third-title-be {
+
+            position: relative;
+            top: 51px;
+            width: 140px;
+            font-size: 14px;
+            margin-left: -4px;
+
+
+        }
+
+
+        .vertical-desc-line {
+            position: relative;
+            top: 59px;
+            color: gray;
+            width: 111px;
+            text-align: center;
+            font-size: 16px;
+            margin-left: -04px;
+
+
+
+        }
+
+        .third-hr {
+
+            border: 0;
+            background-color: #9c97f1;
+            height: 0.2px;
+            width: 108rem;
+            margin-top: 103px;
+            margin-left: 85px;
+        }
+
+        .fourthSection .box {
+            background: white;
+            text-align: center;
+            width: 44vw;
+            height: 2px;
+            margin: 65px 0;
+            display: flex;
+            margin-left: 140px;
+        }
+
+        .vertical-fourth-title-website {
+            position: relative;
+            top: 51px;
+            width: 180px;
+            font-size: 14px;
+            margin-left: -24px;
+        }
+
+        .vertical-third-title-rgb {
+            position: relative;
+            top: 51px;
+            width: 180px;
+            font-size: 14px;
+            margin-left: -20px;
+
+        }
+
+        .vertical-third-title-rfid {
+            position: relative;
+            top: 51px;
+            width: 151px;
+            font-size: 14px;
+            margin-left: -8px;
+
+        }
+
+        .vertical-third-title-crud {
+            position: relative;
+            top: 51px;
+            width: 180px;
+            font-size: 14px;
+            margin-left: -24px;
+
+        }
+
+        .footer {
+            background: color rgba(78, 123, 206, 0.087);
+
+        }
+
+        .footer {
+
+            display: flex;
+            padding: 19px 1px;
+            justify-content: space-evenly;
+        }
+
+        .footer ul {
+            list-style: none;
+        }
+
+        .footer>div {
+            width: 123px;
+        }
+
+        footer .footer-rights {
+            text-align: center;
+            color: gray;
+            padding: 12px;
+        }
+    </style>
+    <link rel="icon" href="http://www.domain.com/favicon.ico" type="image/x-icon" />
+    <link rel="shortcut icon" href="http://www.domain.com/favicon.ico" type="image/x-icon" />
+</head>
+
+<body>
+    <header>
+        <nav>
+            <img src="aayush.jpg" alt="">
+            <div class="left">Aayush's Portfolio </div>
+            <div class="right">
+                <ul>
+                    <li><a href="http://127.0.0.1:5501/index.html">Home</a></li>
+                    <li><a href="about.html">About</a></li>
+
+                    <li><a href="myproject.html">My Projects</a></li>
+                    <li><a href="https://www.linkedin.com/in/aayush-singh-b551b1279">Contact Me</a></li>
+                </ul>
+
+            </div>
+
+        </nav>
+    </header>
+
+    <main>
+        <div id="particles-js"></div>
+        <script type="text/javascript" src="particles.js"></script>
+        <script type="text/javascript" src="app.js"></script>
+        <div class="intro">
+            <section class="firstSection">
+                <div class="leftSection">
+                    Hi, my name is <span class="purple">Aayush</span>
+                    <div>and i am a passinate</div>
+
+
+                    <!-- Element to contain animated typing -->
+                    <span id="element"></span>
+                    <div class="buttons">
+                        <a href="https://www.linkedin.com/in/aayush-singh-b551b1279">
+                            <button class="btn"> Download Resume</button></a>
+
+                        <a href="https://github.com/ishu74">
+                            <button class="btn">Visit Github</button></a>
+                    </div>
+
+                </div>
+                <div class="rightSection">
+                    <img src="bg.png" alt="">
+                </div>
+
+        </div>
+        </section>
+        <!--
+        <hr>
+
+    
+        <section 
+        
+        class="secondSection">
+            <span class="text-gray">What I have done so far</span>
+            <h1> Skills</h1>
+
+            <div class="box">
+                <div class="vertical">
+                    <img class="image-top" src="developer.png" alt="">
+                    <div class="vertical-title">
+                        Web Development
+                    </div>
+                    <div class="vertical-desc">
+                      
+                    </div>
+                </div>
+                <div class="vertical">
+                    <img class="image-top" src="java.jpg" alt="">
+                    <div class="vertical-title">
+                        Java
+                    </div>
+                    <div class="vertical-desc">
+                        
+                    </div>
+                </div>
+
+                <div class="vertical">
+                    <img class="image-top" src="yii.png" alt="">
+                    <div class="vertical-title">
+                        Yii and Yii2
+
+                    </div>
+                    <div class="vertical-desc">
+                       
+                    </div>
+
+                </div>
+                <div class="vertical">
+                    <img class="image-top" src="" alt="">
+                    <div class="vertical-title-sql">
+                        SQL
+                    </div>
+                    <div class="vertical-desc">
+                        
+                    </div>
+                </div>
+                <div class="vertical">
+                    <img class="image-top" src="mysql.png" alt="">
+                    <div class="vertical-title-mysql">
+                        MySQL
+                    </div>
+                    <div class="vertical-desc">
+                        
+                    </div>
+                </div>
+                <div class="vertical">
+                    <img class="image-top" src="python.png" alt="">
+                    <div class="vertical-title">
+                        Python
+                    </div>
+                    <div class="vertical-desc">
+                        
+                    </div>
+                </div>
+
+
+
+                <div class="vertical">
+                    <img class="image-top" src="pcb.png" alt="">
+                    <div class="vertical-title">
+                        PCB Designe
+                    </div>
+                    <div class="vertical-desc">
+                        
+                    </div>
+
+                </div>
+
+        </section>
+        <hr class="second-hr">
+        <section class="thirdSection">
+            <span class="text-gray">This is about my education Details</span>
+            <h1>Educations</h1>
+
+            <div class="box">
+                <div class="vertical">
+                    <img class="image-top-side" src="school.jpg" alt="">
+                    <div class="vertical-third-title-highSchool">
+
+                        High School
+                    </div>
+                    <div class="vertical-desc-line">
+
+                        S S S High School Dobhi Jaunpur
+                        Uttar Pradesh (2014-2016)
+
+                    </div>
+                </div>
+
+                <div class="vertical">
+                    <img class="image-top-side" src="intermediate.png" alt="">
+                    <div class="vertical-third-title-intermediate">
+                        Intermediate (PCM)
+                    </div>
+                    <div class="vertical-desc-line">
+                        S S S Intermediate College Jaunpur
+                        Uttar Pradesh (2016-2018)
+                    </div>
+                </div>
+
+                <div class="vertical">
+                    <img class="image-top-side" src="poly.png" alt="">
+                    <div class="vertical-third-title-poly">
+                        Polytechnic (EXTC)
+                    </div>
+                    <div class="vertical-desc-line">
+                        Vidyalankar Polytechnic Mumbai (2018-2020)
+                    </div>
+                </div>
+                <div class="vertical">
+                    <img class="image-top-side" src="be.png" alt="">
+                    <div class="vertical-third-title-be">
+                        Bachelor Degree
+                    </div>
+                    <div class="vertical-desc-line">
+                        Vidyalankar Institute of Technology Mumbai (2018-2024)
+                    </div>
+                </div>
+        </section>
+
+
+        <hr class="third-hr">
+        <section class="thirdSection">
+            <span class="text-gray">List of projects what I have done so far</span>
+            <h1>Projects</h1>
+
+            <div class="box">
+                <div class="vertical">
+                    <img class="image-top-side" src="" alt="">
+                    <div class="vertical-fourth-title-website">
+                        Portfolio Website
+                    </div>
+                    <div class="vertical-desc-line">
+                        By using HTML , CSS and Js
+                    </div>
+                </div>
+
+                <div class="vertical">
+                    <img class="image-top-side" src="" alt="">
+                    <div class="vertical-third-title-crud">
+                        CRUD Operation
+                    </div>
+                    <div class="vertical-desc-line">
+                       Using PHP ,HTML,CSSand Yii Framework
+                    </div>
+                </div>
+
+                <div class="vertical">
+                    <img class="image-top-side" src="" alt="">
+                    <div class="vertical-third-title-rfid">
+                         Door Lock
+                    </div>
+                    <div class="vertical-desc-line">
+                        RFID , GSM Based Door Lock
+                     </div>
+                </div>
+                <div class="vertical">
+                    <img class="image-top-side" src="" alt="">
+                    <div class="vertical-third-title-rgb">
+                        RGB For Aquarium
+                    </div>
+                    
+                </div>
+        </section>
+    </main>
+    !-->
+        <footer>
+            <div class="footer">
+                <div class="footer-first">
+                    <h3></h3>
+                </div>
+                <div class="footer-second">
+                    <ul>
+                        <li></li>
+                        <li></li>
+                        <li></li>
+                        <li></li>
+
+                    </ul>
+                </div>
+                <div class="footer-third"></div>
+                <div class="footer-fourth"></div>
+            </div>
+            <div class="footer-rights">
+                Copyright &#169; singhaayush.in | All rights reserved
+            </div>
+        </footer>
+        <script src="https://unpkg.com/typed.js@2.0.16/dist/typed.umd.js"></script>
+        <!-- Setup and start animation! -->
+        <script>
+            var typed = new Typed('#element', {
+                strings: ['Web Developer', 'PCB Designer', 'Web Designer'],
+                typeSpeed: 50,
+            });
+
+        </script>
+
+</body>
+
+</html>
